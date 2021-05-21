@@ -5,13 +5,29 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
-const questions = [];
+inquirer.prompt([
+    {
+        type: 'input',
+        name: 'title',
+        message: 'Please enter the name of your application.'
+    },
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please enter your GitHub username.'
 
-// TODO: Create a function to initialize app
-function init() {}
+    },
 
-// Function call to initialize app
-init();
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Please select a license.',
+        choices: [
+            'Mozilla',
+            'Apache',
+            'MIT'
+        ]
+    }
+
+]).then (inquirerResponse => fs.writeFileSync('README.md', generateMarkdown(inquirerResponse)));
