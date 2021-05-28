@@ -67,9 +67,9 @@ function generateMarkdown(inquirerResponse) {
   ${inquirerResponse.email}
 
   ## License:
-  ${renderLicenseBadge(inquirerResponse.license)}
-  ${renderLicenseSection(inquirerResponse.license)}
-  ${renderLicenseLink(inquirerResponse.license)}
+  ${renderLicenseBadge(inquirerResponse.license)} <br/>
+  ${renderLicenseSection(inquirerResponse.license)} <br/>
+  ${renderLicenseLink(inquirerResponse.license)} <br/>
   `;
 }
 
