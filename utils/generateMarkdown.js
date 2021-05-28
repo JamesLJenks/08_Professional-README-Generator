@@ -48,6 +48,10 @@ function generateMarkdown(inquirerResponse) {
   ## Description:
   ${inquirerResponse.description}
 
+  ## Table of Contents:
+  [Description:](#description)
+  [Installation:](#installation)
+
   ## Installation:
   ${inquirerResponse.installation}
 
