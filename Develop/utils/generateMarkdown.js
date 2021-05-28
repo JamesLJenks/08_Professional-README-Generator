@@ -25,13 +25,31 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(inquirerResponse) {
   return `
-  # Application Title:
+  ## Application Title:
   ${inquirerResponse.title}
 
-  # GitHub User:
+  ## Description:
+  ${inquirerResponse.description}
+
+  ## Installation:
+  ${inquirerResponse.installation}
+
+  ## Usage:
+  ${inquirerResponse.usage}
+
+  ## Contributions:
+  ${inquirerResponse.contributions}
+
+  ## Tests
+  ${inquirerResponse.tests}
+
+  ## GitHub User:
   ${inquirerResponse.github}
 
-  # License:
+  ## Email:
+  ${inquirerResponse.email}
+
+  ## License:
   ${renderLicenseBadge(inquirerResponse.license)}
   `;
 }
