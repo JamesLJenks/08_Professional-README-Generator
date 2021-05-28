@@ -45,32 +45,38 @@ function generateMarkdown(inquirerResponse) {
   return `
   # ${inquirerResponse.title}
 
-  ## Description:
+  ## Description
   ${inquirerResponse.description}
 
   ## Table of Contents:
-  [Description:](#description)
-  [Installation:](#installation)
+  [Description](#description) <br/>
+  [Installation](#installation) <br/>
+  [Usage](#usage) <br/>
+  [Contributions](#contributions) <br/>
+  [Tests](#tests) <br/>
+  [GitHub](#github) <br/>
+  [Email](#email) <br/>
+  [License](#license) <br/>
 
-  ## Installation:
+  ## Installation
   ${inquirerResponse.installation}
 
-  ## Usage:
+  ## Usage
   ${inquirerResponse.usage}
 
-  ## Contributions:
+  ## Contributions
   ${inquirerResponse.contributions}
 
   ## Tests
   ${inquirerResponse.tests}
 
-  ## GitHub User:
+  ## GitHub
   ${inquirerResponse.github}
 
-  ## Email:
+  ## Email
   ${inquirerResponse.email}
 
-  ## License:
+  ## License
   ${renderLicenseBadge(inquirerResponse.license)} <br/>
   ${renderLicenseSection(inquirerResponse.license)} <br/>
   ${renderLicenseLink(inquirerResponse.license)} <br/>
