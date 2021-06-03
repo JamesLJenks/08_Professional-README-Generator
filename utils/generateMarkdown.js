@@ -2,11 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === 'Mozilla') {
-    return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]`;
+    return `![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)`;
   } else if (license === 'Apache') {
-    return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]`;
+    return `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
   } else if (license === 'MIT') {
-    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
+    return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
   } else {
     return`('Please enter a valid license.')`;
   }
@@ -54,7 +54,7 @@ function generateMarkdown(inquirerResponse) {
   [Usage](#usage) <br/>
   [Contributions](#contributions) <br/>
   [Tests](#tests) <br/>
-  [GitHub](#github) <br/>
+  [Questions](#questions) <br/>
   [Email](#email) <br/>
   [License](#license) <br/>
 
@@ -70,11 +70,8 @@ function generateMarkdown(inquirerResponse) {
   ## Tests
   ${inquirerResponse.tests}
 
-  ## GitHub
-  ${inquirerResponse.github}
-
-  ## Email
-  ${inquirerResponse.email}
+  ## Questions
+  If you have questions about this application, please contact me via GitHub at username ${inquirerResponse.github} or by email at ${inquirerResponse.email}.
 
   ## License
   ${renderLicenseBadge(inquirerResponse.license)} <br/>
