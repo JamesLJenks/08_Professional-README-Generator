@@ -30,11 +30,11 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === 'Mozilla') {
-    return `This application is licensed by Mozilla`;
+    return `This application is licensed by Mozilla.`;
   } else if (license === 'Apache') {
-    return `This application is licensed by Apache`;
+    return `This application is licensed by Apache.`;
   } else if (license === 'MIT') {
-    return `This application is licensed by MIT`;
+    return `This application is licensed by MIT.`;
   } else {
     return`('Please enter a valid license.')`;
   }
@@ -55,7 +55,6 @@ function generateMarkdown(inquirerResponse) {
   [Contributions](#contributions) <br/>
   [Tests](#tests) <br/>
   [Questions](#questions) <br/>
-  [Email](#email) <br/>
   [License](#license) <br/>
 
   ## Installation
