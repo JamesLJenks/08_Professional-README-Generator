@@ -30,11 +30,11 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === 'Mozilla') {
-    return `This application is licenses by Mozilla`;
+    return `This application is licensed by Mozilla`;
   } else if (license === 'Apache') {
-    return `This application is licenses by Apache`;
+    return `This application is licensed by Apache`;
   } else if (license === 'MIT') {
-    return `This application is licenses by MIT`;
+    return `This application is licensed by MIT`;
   } else {
     return`('Please enter a valid license.')`;
   }
@@ -81,7 +81,3 @@ function generateMarkdown(inquirerResponse) {
 }
 
 module.exports = generateMarkdown;
-
-// Add table of contents
-// Use double hashtags to create links to headers in Table of Contents
-// Find more license badges
