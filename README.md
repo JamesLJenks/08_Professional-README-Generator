@@ -1,5 +1,5 @@
 
-  # Jay
+  # James L. Jenks
 
   ## Description
   Description
@@ -15,7 +15,7 @@
   [License](#license) <br/>
 
   ## Installation
-  Installation
+  Instructions
 
   ## Usage
   Usage
@@ -24,13 +24,13 @@
   Contributions
 
   ## Tests
-  Guidelines
+  Test Guidelines
 
   ## Questions
   If you have questions about this application, please contact me via GitHub at username JamesLJenks or by email at jamesljenks@gmail.com.
 
   ## License
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) <br/>
-  This application is licenses by MIT <br/>
+  This application is licensed by MIT <br/>
   https://opensource.org/licenses/MIT <br/>
   
